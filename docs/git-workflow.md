@@ -15,10 +15,12 @@
 ## Steps
 
 1. Branch off the latest `main`:
+
    ```sh
    git fetch origin main
    git checkout -b issue-<n>-<short-title> origin/main
    ```
+
 2. Commit with clear, descriptive messages.
 3. Push: `git push -u origin issue-<n>-<short-title>`
 4. Open a PR against `main` that references the issue.
