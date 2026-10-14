@@ -1,0 +1,11 @@
+# markdownlint config: https://github.com/DavidAnson/markdownlint
+config:
+  default: true
+  # Allow long prose lines; file length is enforced separately (bin/check-md-length).
+  MD013: false
+
+globs:
+  - "**/*.md"
+
+ignores:
+  - "node_modules/**"
