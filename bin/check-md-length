@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Fails if any Markdown file in the repo exceeds MAX_LINES lines.
+MAX_LINES = Integer(ENV.fetch("MAX_LINES", 300))
+
+files = `git ls-files -- '*.md'`.split("\n")
+offenders = files.filter_map do |path|
+  count = File.foreach(path).count
+  [path, count] if count > MAX_LINES
+end
+
+if offenders.empty?
+  puts "All #{files.size} Markdown files are within #{MAX_LINES} lines."
+else
+  offenders.each { |path, count| puts "::error file=#{path}::#{path} has #{count} lines (max #{MAX_LINES})" }
+  exit 1
+end
