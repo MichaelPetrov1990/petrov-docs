@@ -108,7 +108,7 @@ Further reasoning:
 
 The diagnostic determines which adaptations are suggested to the teacher.
 
-## Data model (conceptual)
+## Data model — conceptual
 
 The MVP needs to represent the relationship between:
 

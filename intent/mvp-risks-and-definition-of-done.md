@@ -74,6 +74,6 @@ rather than keeping pupils inside a personalised digital-learning platform.
 
 ## Definition of done
 
-This intent is complete when the success criteria above are verified and the resulting MVP is sufficiently usable to demonstrate the complete core loop to primary teachers and collect evidence against the product-validation questions.
+This intent is complete when the [success criteria](mvp-scope-and-success.md#success-criteria) are verified and the resulting MVP is sufficiently usable to demonstrate the complete core loop to primary teachers and collect evidence against the [product validation questions](mvp-scope-and-success.md#product-validation-questions).
 
 MIS integration and broader commercialisation are deliberately deferred to subsequent intents.
